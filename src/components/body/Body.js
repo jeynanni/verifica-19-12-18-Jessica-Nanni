@@ -19,7 +19,9 @@ class Body extends Component {
       <div>{this.props.id}</div>
       <div>{this.props.title}</div>
       </div>
+      <div className="secondImg">
       <img alt={this.props.title} src={this.props.url}/>  
+      </div>
       </div>
       </div>
       
