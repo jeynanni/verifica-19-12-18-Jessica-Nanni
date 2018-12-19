@@ -1,0 +1,13 @@
+.container {
+    background-color: rgb(195, 233, 220);
+    border : 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+.second {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.firstImg {
+    margin-top: 10px;
+}
