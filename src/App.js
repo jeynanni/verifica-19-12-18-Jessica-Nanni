@@ -39,10 +39,14 @@ photo() {
     return (
       <div className="App">
         <div>
-          
-        {this.state.photo.map((item,index) => (<Photos key={'image-list'+ index}  title={item.title} url={item.url} thumbnail={item.thumbnailUrl}/>))}
+          {this.state.photo.map((item,index)=> {
+            if(index<10){
+              return <Body key={'photo-list'+ index}  title={item.title} url={item.url} thumbnail={item.thumbnailUrl}user={item.albumId}id= {item.id}/>
+            }
+          })}
+       
         {/*<Photos thumbnail={this.state.photo.thumbnailUrl} title={this.state.photo.title}/><Photos url ={this.state.photo.url}/> ======>single image*/}
-        {this.state.albums.map((item,index) => (<Body key={'photo-list' + index} user={item.albumId} id= {item.id} title={item.title}/>))}
+       {/*} {this.state.albums.map((item,index) => (<Body key={'photo-list' + index} user={item.albumId} id= {item.id} title={item.title}/>))}*/}
       </div>
       </div>
     );

@@ -12,7 +12,8 @@ class Body extends Component {
       <div>{this.props.albumId}<div/>
       <div>{this.props.id}</div>
       <div>{this.props.title}</div>
-      
+      <img alt={this.props.title} src={this.props.url}/>  
+      <img alt={this.props.title} src={this.props.thumbnail}/>
       </div>
       </div>
     );
